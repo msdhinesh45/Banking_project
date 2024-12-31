@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <link rel="stylesheet" href="Styles/deposit.css">
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/5/Money-Heist-TV-Series-PNG-File.png" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/Bank logo.png" alt="Bank Logo">
+            <h1>Danger Banking</h1>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">☰</label>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="signup.html">Create Account</a>
+            <a href="deposit.html">Deposit</a>
+            <a href="withdraw.html">Withdraw</a>
+            <a href="alldata.html">All Data</a>
+        </div>
+    </div>
+
+    <!-- Deposit Form Section -->
+    <div class="content">
+        <h2>Deposit Money</h2>
+        <form class="deposit-form">
+            <label for="account">Account Number:</label>
+            <input type="number" id="account" name="account" placeholder="Enter your account number" required>
+
+            <label for="amount">Deposit Amount:</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount to deposit" required>
+
+            <button style="margin-top: 8px;" type="submit">Deposit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2030 Danger Banking. All rights reserved.
+    </div>
+</body>
+<script src="Script/deposit.js"></script>
+</html>

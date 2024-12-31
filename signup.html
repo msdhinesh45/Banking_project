@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danger Banking - Signup</title>
+    <link rel="stylesheet" href="Styles/signup.css">
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/5/Money-Heist-TV-Series-PNG-File.png">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/Bank logo.png" alt="Bank Logo">
+            <h1>Danger Banking</h1>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">☰</label>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="signup.html">Create Account</a>
+            <a href="deposit.html">Deposit</a>
+            <a href="withdraw.html">Withdraw</a>
+            <a href="alldata.html">All Data</a>
+        </div>
+    </div>
+
+    <div class="signup-container">
+        <h2>Create Your Account</h2>
+        <form method="post" id="signup-form">
+            <label for="Full name">Full Name</label>
+            <input type="text" id="Full name" name="Full name" placeholder="Enter your Full name">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter your Age">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Create unique username">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="Phone number">Phone Number</label>
+            <input type="number" id="Phone number" minlength="10" name="Phone number" placeholder="Enter your Phone number">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+
+            <label for="Documents">Any document</label>
+            <input type="file" id="Documents" name="Documents">
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+
+    <script src="Script/signup..js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danger Banking - Sign In</title>
+    <link rel="stylesheet" href="Styles/signin.css">
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/5/Money-Heist-TV-Series-PNG-File.png" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/Bank logo.png" alt="Bank Logo">
+            <h1>Danger Banking</h1>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">☰</label>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="signup.html">Create Account</a>
+            <a href="deposit.html">Deposit</a>
+            <a href="withdraw.html">Withdraw</a>
+            <a href="alldata.html">All Data</a>
+        </div>
+    </div>
+
+    <div class="signin-container">
+        <h2>Sign In to Your Account</h2>
+        <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+            <br>
+            <button type="submit">Sign In</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+    <script src="Script/signin.js"></script>
+</body>
+</html>

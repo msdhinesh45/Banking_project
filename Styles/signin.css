@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://wallpapercave.com/wp/wp6581315.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Background Layer */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Nav bar design */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    width: 96%;
+    z-index: 3;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 55px;
+    margin-right: 10px;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: red;
+}
+
+.navbar .nav-toggle {
+    display: none;
+}
+
+.navbar .nav-toggle-label {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.navbar .nav-links a:hover {
+    color: red;
+}
+
+.signin-container {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    margin: 150px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.signin-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.signin-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.signin-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.signin-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button, a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.signin-container button:hover {
+    background-color: #0056b3;
+}
+
+.signin-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signin-container p a {
+    color: red;
+    text-decoration: none;
+}
+
+.signin-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    .navbar {
+        padding-bottom: 40px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .logo {
+        margin-bottom: 15px;
+    }
+
+    .navbar .nav-toggle-label {
+        display: block;
+    }
+
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar .nav-toggle:checked + .nav-toggle-label + .nav-links {
+        display: flex;
+    }
+
+    .navbar .nav-links a {
+        margin: 10px 0;
+    }
+
+    .signin-container {
+        margin: 100px auto;
+        padding: 35px;
+    }
+
+    .signin-container h2 {
+        display: none;
+        font-size: 24px;
+    }
+
+    .signin-container input, .signin-container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        height:100%;
+        width: 100%;
+    }
+    .navbar .nav-links a {
+        font-size: 14px;
+        margin: 5px 5px;
+        margin-bottom: 50px;
+    }
+
+    .signin-container {
+        margin-top: 160px;
+        /* margin: 80px auto; */
+        padding: 10px;
+    }
+
+    .signin-container h2 {
+        font-size: 20px;
+        display: none;
+    }
+
+    .signin-container input, .signin-container button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

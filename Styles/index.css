@@ -71,13 +71,14 @@ body {
 
 .navbar .nav-links a {
     text-decoration: none;
-    color: white;
-    font-size: 16px;
+    color: red;
+    font-size: 1.5em;
     margin: 5px 10px;
 }
 
 .navbar .nav-links a:hover {
-    color: red;
+    color: blue;
+    rotate: 10deg;
 }
 
 /* Content page design */
@@ -97,7 +98,7 @@ body {
 }
 
 .content h1 {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -132,10 +133,14 @@ body {
 }
 
 .signup:hover {
+    width: 100px;
+    height: 60px;
     background-color: #218838;
 }
 
 .signin:hover {
+    width: 100px;
+    height: 60px;
     background-color: #0056b3;
 }
 

@@ -1,10 +1,14 @@
+    // Accessing a form
 
     document.querySelector(".withdraw-form").addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const account = document.getElementById("account").value.trim();
-        const withdrawAmount = parseFloat(document.getElementById("amount").value.trim());
+        // geting input values and storing to variable
 
+        const account = document.getElementById("account").value.trim();
+        const withdrawAmount = parseFloat(document.getElementById("amount").value.trim());  //Amount will be converting as float
+
+        //Entered wrong acc number or withdraw ammount is negative 
         if (!account || isNaN(withdrawAmount) || withdrawAmount <= 0) {
             alert("Please enter a valid account number and withdrawal amount.");
             return;

@@ -78,6 +78,18 @@ body {
     margin: 0 15px;
 }
 
+/*Active design*/
+.navbar .nav-links a.active {
+    color: yellow; 
+    font-size: 1.3em;
+    font-weight: bold; 
+    text-decoration: underline; 
+}
+.navbar .nav-links a.disabled {
+    pointer-events: none;
+    cursor: default; 
+}
+
 .navbar .nav-links a:hover {
     color: red;
 }
@@ -158,7 +170,7 @@ body {
     padding: 10px 0;
     color: white;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 220px;
 }
 
 /* Media Queries */

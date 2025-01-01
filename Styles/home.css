@@ -75,6 +75,20 @@ body {
     margin: 0 15px;
 }
 
+/*Active design*/
+.navbar .nav-links a.active {
+    color: yellow; 
+    font-size: 1.3em;
+    font-weight: bold; 
+    text-decoration: underline; 
+}
+.navbar .nav-links a.disabled {
+    pointer-events: none;
+    
+    cursor: default; 
+}
+
+
 .navbar .nav-links a:hover {
     color: red;
 }

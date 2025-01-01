@@ -24,11 +24,11 @@ document.querySelector(".deposit-form").addEventListener("submit", function (eve
         }
 
         // Add the deposit amount to the account balance
-        accounts[account].balance += depositAmount;
+        accounts[account].balance += depositAmount;     //Acount is object key and deposit amount is input value
 
         // Update the account data in local storage
-        localStorage.setItem("accounts", JSON.stringify(accounts));
+        localStorage.setItem("accounts", JSON.stringify(accounts));     // stringify converts object/any datatype to string
 
         alert(`Successfully deposited ₹${depositAmount} to account ${account}. Current balance: ₹${accounts[account].balance}`);
-        document.querySelector(".deposit-form").reset();
+        document.querySelector(".deposit-form").reset();        //input values are reseted automaticaly when accept alert msg
     });

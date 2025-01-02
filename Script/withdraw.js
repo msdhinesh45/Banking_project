@@ -1,5 +1,5 @@
     // Accessing a form
-
+    
     document.querySelector(".withdraw-form").addEventListener("submit", function (event) {
         event.preventDefault();
 

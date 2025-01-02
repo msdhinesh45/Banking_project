@@ -144,6 +144,23 @@ body {
     background-color: #0056b3;
 }
 
+.admin {
+    background-color: #ffc107; 
+    color: black; 
+}
+
+.admin a {
+    text-decoration: none;
+    color: black;
+}
+
+.admin:hover {
+    width: 100px;
+    height: 60px;
+    background-color: #e0a800; 
+}
+
+
 /* Media Queries */
 @media (max-width: 768px) {
     .navbar {

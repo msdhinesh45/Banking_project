@@ -97,7 +97,7 @@ body {
 .content {
     position: relative;
     z-index: 2;
-    max-width: 500px;
+    max-width: 600px;
     margin: 150px auto;
     text-align: center;
     padding: 19px;

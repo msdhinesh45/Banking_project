@@ -17,7 +17,7 @@
             <img src="Images/Bank logo.png" alt="Bank Logo">
             <h1>Danger Banking</h1>
         </div>
-        <a style="margin-right: 60px;" href="admin-home-page.html">Admin Home</a>
+        <a style="margin-right: 60px;" href="admin-home-page.html" onclick="return admin()">Admin Home</a>
     </div>
 
     <!-- Login Form -->
@@ -31,3 +31,9 @@
     </div>
 </body>
 </html>
+<script>
+    function admin() {
+        alert("You need signin first");
+        return false;
+    }
+    </script>
